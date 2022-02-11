@@ -1,32 +1,39 @@
 import styled from 'styled-components';
 
-export const darkBlueColor = `#13273f`;
+export const darkBlueColor = `#2a2830;`;
 
 export const H1 = styled.h1`
   font-size: 48px;
   line-height: 60px;
   font-weight: bold;
-  color: ${darkBlueColor};
+  color: var(--dark-text);
 `;
 
 export const H2 = styled.h2`
   font-size: 36px;
   line-height: 45px;
   font-weight: bold;
-  color: ${darkBlueColor};
 `;
 
 export const H3 = styled.h3`
   font-size: 26px;
   line-height: 40px;
   font-weight: bold;
-  color: #${darkBlueColor};
+  color: var(--dark-text);
+`;
+
+export const H4 = styled.h4`
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--dark-text);
 `;
 
 export const P = styled.p`
   font-size: 16px;
   line-height: 26px;
-  color: ${darkBlueColor};
+  color: #2e2e2e;
+  font-family: 'Roboto';
 `;
 
 export const Strong = styled(P)`
@@ -56,21 +63,4 @@ export const SecondaryP = styled(P)`
   line-height: 18px;
   font-weight: 500;
   color: #6c6c8a;
-`;
-export const Body1 = styled(P)`
-  font-size: 16px;
-  line-height: 26px;
-`;
-export const Body4 = styled(P)`
-  font-size: 14px;
-  line-height: 20px;
-`;
-export const Description = styled(P)`
-  margin: 1rem 0;
-  &:last-of-type {
-    margin-bottom: 2rem;
-  }
-  &:first-of-type {
-    margin-top: 2rem;
-  }
 `;
