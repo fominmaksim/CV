@@ -19,7 +19,7 @@ const Avatar = styled.img`
   width: 30%;
   @media (max-width: 1200px) {
     width: 100%;
-    margin-bottom: var(--space-2)
+    margin-bottom: var(--space-2);
   }
 `;
 const HeaderText = styled.div`
@@ -29,6 +29,10 @@ const HeaderText = styled.div`
     flex-basis: 100%;
     padding-left: 0;
   }
+`;
+
+const Link = styled.a`
+  color: inherit;
 `;
 
 const ContactItem = styled.div`
@@ -89,7 +93,7 @@ const Right = styled.div`
   padding-left: var(--space-3);
   @media (max-width: 1200px) {
     padding-left: 0;
-    padding-top: 0;
+    margin-top: 0;
   }
 `;
 
@@ -131,57 +135,79 @@ const Home: React.FunctionComponent = () => (
           <SectionTitle>CONTACT</SectionTitle>
           <ContactItem>
             <Icon src={email} alt="email icon" />
-            <P>fomin.max.13@gmail.com</P>
+            <P>
+              <Link href="mailto:fomin.max.13@gmail.com">
+                fomin.max.13@gmail.com
+              </Link>
+            </P>
           </ContactItem>
 
           <ContactItem>
-            {' '}
             <Icon src={github} alt="github icon" />
-            <P>fominmaksim</P>
+            <P>
+              <Link href="https://github.com/fominmaksim">fominmaksim</Link>
+            </P>
           </ContactItem>
 
           <ContactItem>
-            {' '}
             <Icon src={linkedin} alt="linkedin icon" />
-            <P>Maksim Fomin</P>
+            <P>
+              <Link href="https://www.linkedin.com/in/maxim-fomin-093325143/">
+                Maksim Fomin
+              </Link>
+            </P>
           </ContactItem>
         </InfoSection>
         <InfoSection>
           <SectionTitle>EDUCATION</SectionTitle>
           <DescriptionItem>
             <Span className="accent-text-black-bold">
-              English phylology faculty Master's degree
+              English phylology faculty Master&apos;s degree
             </Span>
             Kryvyi Rih State Pedagogical University 2013-2018
           </DescriptionItem>
           <DescriptionItem>
             <Span className="accent-text-black-bold">
               School №32 Kryvyi Rih
-            </Span>{' '}
+            </Span>
             2002-2013
           </DescriptionItem>
-          <DescriptionItem></DescriptionItem>
         </InfoSection>
         <InfoSection>
           <SectionTitle>SKILLS</SectionTitle>
           <DescriptionItem>
-            <HoverableSpan>REACT</HoverableSpan>
+            <HoverableSpan>React</HoverableSpan>
           </DescriptionItem>
-          <DescriptionItem>REDUX</DescriptionItem>
-          <DescriptionItem>TYPESCRIPT</DescriptionItem>
-          <DescriptionItem>STYLED COMPONENTS</DescriptionItem>
-          <DescriptionItem>ANT DESIGN</DescriptionItem>
-          <DescriptionItem>FIREBASE</DescriptionItem>
-          <DescriptionItem>STORYBOOK</DescriptionItem>
-          <DescriptionItem>JAVASCRIPT</DescriptionItem>
-          <DescriptionItem>HTML/CSS</DescriptionItem>
-          <DescriptionItem>ADOBE PHOTOSHOP</DescriptionItem>
+          <DescriptionItem>Redux</DescriptionItem>
+          <DescriptionItem>Typescript</DescriptionItem>
+          <DescriptionItem>Styled Components</DescriptionItem>
+          <DescriptionItem>Ant Design</DescriptionItem>
+          <DescriptionItem>Firebase</DescriptionItem>
+          <DescriptionItem>Storybook</DescriptionItem>
+          <DescriptionItem>Javascript</DescriptionItem>
+          <DescriptionItem>Html/Css</DescriptionItem>
+          <DescriptionItem>Figma</DescriptionItem>
+          <DescriptionItem>Adobe Photoshop</DescriptionItem>
         </InfoSection>
       </Left>
       <Right>
         <InfoSection>
           <SectionTitle>EXPERIENCE</SectionTitle>
-          <JobTitle>FENA | FREELANCE</JobTitle>
+          <JobTitle>
+            <Link
+              href="https://condescending-aryabhata-5b6f54.netlify.app/"
+              target="_blank"
+            >
+              Fena
+            </Link>
+            {` `}| {` `}
+            <Link
+              href="https://github.com/fena-co/marketing-website"
+              target="_blank"
+            >
+              Freelance
+            </Link>
+          </JobTitle>
           <Date>dec 2021 - jan 2021</Date>
           <DescriptionItem>
             Built an application using gatsby, typescript and styled components,
@@ -189,7 +215,21 @@ const Home: React.FunctionComponent = () => (
           </DescriptionItem>
         </InfoSection>
         <InfoSection>
-          <JobTitle>PHOTOMAGI | FREELANCE</JobTitle>
+          <JobTitle>
+            <Link
+              href="https://attech-org.github.io/photomagi/"
+              target="_blank"
+            >
+              Photomagi
+            </Link>
+            {` `}|{` `}
+            <Link
+              href="https://github.com/attech-org/photomagi"
+              target="_blank"
+            >
+              Freelance
+            </Link>
+          </JobTitle>
           <Date>nov 2021 - dec 2021</Date>
           <DescriptionItem>
             Built an application using react, redux, typescript, styled
@@ -197,28 +237,36 @@ const Home: React.FunctionComponent = () => (
           </DescriptionItem>
         </InfoSection>
         <InfoSection>
-          <JobTitle>AIR | FREELANCE</JobTitle>
+          <JobTitle>
+            <Link href="https://attech-org.github.io/air/" target="_blank">
+              Air
+            </Link>
+            {` `}|{` `}
+            <Link href="https://github.com/attech-org/air" target="_blank">
+              Freelance
+            </Link>
+          </JobTitle>
           <Date>sep 2021 - nov 2021</Date>
           <DescriptionItem>
             Built an application using react and styled components
           </DescriptionItem>
         </InfoSection>
         <InfoSection>
-          <JobTitle>WOODWORKING MACHINE OPERATOR | EMC</JobTitle>
+          <JobTitle>Woodworking machine operator | EMC</JobTitle>
           <Date>sep 2020 - june 2021</Date>
           <DescriptionItem>
             Produced raw material for modular houses
           </DescriptionItem>
         </InfoSection>
         <InfoSection>
-          <JobTitle>ENGLISH TEACHER | SKYENG</JobTitle>
+          <JobTitle>English teacher | SkyEng</JobTitle>
           <Date>dec 2018 - aug 2020</Date>
           <DescriptionItem>
             Taught adults beginner - upper-intermediate levels
           </DescriptionItem>
         </InfoSection>
         <InfoSection>
-          <JobTitle>INTERPRETER | ARCELOR MITTAL</JobTitle>
+          <JobTitle>Interpreter | Arcelor Mittal</JobTitle>
           <Date>sep 2017 - nov 2018</Date>
           <DescriptionItem>
             Translated documentration, daily meetings, accompanied foreign
