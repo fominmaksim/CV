@@ -11,7 +11,7 @@ const Main = styled.main`
   @media (max-width: 1200px) {
     width: calc(100% - 0.5rem * 2);
     height: calc(100% - 0.5rem * 2);
-    padding: 3rem 0.5rem 1rem 0.5rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
     margin: 0;
   }
 `;
