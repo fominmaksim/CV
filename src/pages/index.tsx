@@ -3,9 +3,9 @@ import { H1, H3, H4, P } from '@/components/Typography';
 import styled from 'styled-components';
 import Main from '@/components/Main';
 import avatar from '../assets/img/avatar.jpg';
-import email from '../assets/icons/email.png';
-import github from '../assets/icons/github.png';
-import linkedin from '../assets/icons/linkedin.png';
+import email from '../assets/icons/email.svg';
+import github from '../assets/icons/github.svg';
+import linkedin from '../assets/icons/linkedin.svg';
 
 const Header = styled.section`
   display: flex;
@@ -105,13 +105,6 @@ const Date = styled(P)`
   margin-bottom: var(--space-1);
 `;
 
-const HoverableSpan = styled.span`
-  transition: 200ms;
-  &:hover {
-    color: green;
-  }
-`;
-
 const Home: React.FunctionComponent = () => (
   <Main>
     <Header>
@@ -175,9 +168,7 @@ const Home: React.FunctionComponent = () => (
         </InfoSection>
         <InfoSection>
           <SectionTitle>SKILLS</SectionTitle>
-          <DescriptionItem>
-            <HoverableSpan>React</HoverableSpan>
-          </DescriptionItem>
+          <DescriptionItem>React</DescriptionItem>
           <DescriptionItem>Redux</DescriptionItem>
           <DescriptionItem>Typescript</DescriptionItem>
           <DescriptionItem>Styled Components</DescriptionItem>
@@ -198,17 +189,17 @@ const Home: React.FunctionComponent = () => (
               href="https://condescending-aryabhata-5b6f54.netlify.app/"
               target="_blank"
             >
-              Fena
+              Software engineer
             </Link>
             {` `}| {` `}
             <Link
               href="https://github.com/fena-co/marketing-website"
               target="_blank"
             >
-              Freelance
+              Fena
             </Link>
           </JobTitle>
-          <Date>dec 2021 - jan 2021</Date>
+          <Date>dec 2021 - current</Date>
           <DescriptionItem>
             Built an application using gatsby, typescript and styled components,
             plugged cms
@@ -220,14 +211,14 @@ const Home: React.FunctionComponent = () => (
               href="https://attech-org.github.io/photomagi/"
               target="_blank"
             >
-              Photomagi
+              Freelance
             </Link>
             {` `}|{` `}
             <Link
               href="https://github.com/attech-org/photomagi"
               target="_blank"
             >
-              Freelance
+              Photomagi
             </Link>
           </JobTitle>
           <Date>nov 2021 - dec 2021</Date>
@@ -239,11 +230,11 @@ const Home: React.FunctionComponent = () => (
         <InfoSection>
           <JobTitle>
             <Link href="https://attech-org.github.io/air/" target="_blank">
-              Air
+              Freelance
             </Link>
             {` `}|{` `}
             <Link href="https://github.com/attech-org/air" target="_blank">
-              Freelance
+              Air
             </Link>
           </JobTitle>
           <Date>sep 2021 - nov 2021</Date>
