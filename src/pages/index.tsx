@@ -173,8 +173,8 @@ const Home: React.FunctionComponent = () => (
           <DescriptionItem>Typescript</DescriptionItem>
           <DescriptionItem>Styled Components</DescriptionItem>
           <DescriptionItem>Ant Design</DescriptionItem>
-          <DescriptionItem>Firebase</DescriptionItem>
-          <DescriptionItem>Storybook</DescriptionItem>
+          <DescriptionItem>NodeJs</DescriptionItem>
+          <DescriptionItem>Express</DescriptionItem>
           <DescriptionItem>Javascript</DescriptionItem>
           <DescriptionItem>Html/Css</DescriptionItem>
           <DescriptionItem>Figma</DescriptionItem>
@@ -185,24 +185,19 @@ const Home: React.FunctionComponent = () => (
         <InfoSection>
           <SectionTitle>EXPERIENCE</SectionTitle>
           <JobTitle>
-            <Link
-              href="https://condescending-aryabhata-5b6f54.netlify.app/"
-              target="_blank"
-            >
+            <Link href="https://www.fena.co/" target="_blank">
               Software engineer
             </Link>
             {` `}| {` `}
-            <Link
-              href="https://github.com/fena-co/marketing-website"
-              target="_blank"
-            >
+            <Link href="https://www.fena.co/" target="_blank">
               Fena
             </Link>
           </JobTitle>
           <Date>dec 2021 - current</Date>
           <DescriptionItem>
             Built an application using gatsby, typescript and styled components,
-            plugged cms
+            plugged cms. Developing and supporting open banking product web
+            application.
           </DescriptionItem>
         </InfoSection>
         <InfoSection>
